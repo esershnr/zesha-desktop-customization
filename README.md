@@ -37,7 +37,7 @@ This repository contains my personal configuration files and instructions for cu
 
 ### 📂 Start Menu
 ![Start Menu 00](screenshots/start_menu-00.png)  
-![Start Menu 01](screenshots/start_menu-01.png)
+![Start Menu 01](screenshots/start-menu-01.png)
 
 ### 📌 Taskbar
 ![Taskbar 00](screenshots/taskbar-00.png)  
