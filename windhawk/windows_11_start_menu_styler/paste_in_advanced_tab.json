@@ -60,7 +60,7 @@
   "controlStyles[23].styles[0]": "Background=#1f1d2e",
   "controlStyles[23].styles[1]": "CornerRadius=10",
   "controlStyles[24].target": "Windows.UI.Xaml.Controls.TextBlock[Text=]",
-  "controlStyles[24].styles[0]": "Text=      ",
+  "controlStyles[24].styles[0]": "Text= ",
   "controlStyles[25].target": "StartDocked.NavigationPaneButton#PowerButton",
   "controlStyles[25].styles[0]": "Width=120",
   "controlStyles[26].target": "Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
@@ -115,5 +115,13 @@
   "controlStyles[42].styles[0]": "Background=#191724",
   "controlStyles[42].styles[1]": "BorderBrush=#ebbcba",
   "controlStyles[42].styles[2]": "BorderThickness=0",
-  "controlStyles[42].styles[3]": "CornerRadius=18"
+  "controlStyles[42].styles[3]": "CornerRadius=18",
+  "theme": "",
+  "disableNewStartMenuLayout": 1,
+  "webContentStyles[0].target": "",
+  "webContentStyles[0].styles[0]": "",
+  "webContentCustomJs": "",
+  "styleConstants[0]": "",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": ""
 }

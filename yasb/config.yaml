@@ -20,8 +20,9 @@ bars:
       round_corners: false
       border_color: None
     window_flags:
-      always_on_top: false
+      always_on_top: true
       windows_app_bar: true
+      hide_on_fullscreen: true
     dimensions:
       width: "100%"
       height: 28
@@ -44,6 +45,7 @@ bars:
         ]
       right:
         [
+          "systray",
           "taskbar",
           "language",
           "microphone",
@@ -52,6 +54,25 @@ bars:
           "power_menu"
         ]
 widgets:
+  systray:
+    type: "yasb.systray.SystrayWidget"
+    options:
+      class_name: "systray"
+      label_collapsed: "\uf053"
+      label_expanded: "\uf054"
+      label_position: "left" # Can be "left" or "right"
+      icon_size: 12 # Can be any integer between 8 and 64
+      pin_click_modifier: "ctrl" # Can be "ctrl", "alt" or "shift"
+      show_unpinned: false
+      show_unpinned_button: true
+      show_battery: false
+      show_volume: false
+      show_network: false
+      btn_shadow:
+        enabled: false
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
   language:
     type: "yasb.language.LanguageWidget"
     options:
@@ -124,6 +145,7 @@ widgets:
         - "\uf027"  # Icon for 31-60% volume
         - "\uf028"  # Icon for 61-100% volume
       callbacks:
+        on_middle: "exec cmd.exe /c start mmsys.cpl"
         on_right: "exec cmd.exe /c start ms-settings:sound"
   microphone:
     type: "yasb.microphone.MicrophoneWidget"
@@ -135,7 +157,7 @@ widgets:
         muted: "\uf131"
       callbacks:
         on_left: "toggle_mute"
-        on_middle: "exec cmd.exe /c start ms-settings:sound"
+        on_middle: "exec cmd.exe /c start mmsys.cpl ,1"
         on_right: "exec cmd.exe /c start ms-settings:privacy-microphone"
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
@@ -162,11 +184,7 @@ widgets:
         processes: []
         titles: []
         classes: []
-      container_padding:
-        top: 0
-        left: 0
-        bottom: 0
-        right: 0
+      hide_empty: true
   win_button:
     type: "yasb.custom.CustomWidget"
     options:
