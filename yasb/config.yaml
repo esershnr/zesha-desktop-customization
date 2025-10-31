@@ -8,7 +8,7 @@ komorebi:
 bars:
   primary-bar:
     enabled: true
-    screens: ['27GN7', 'LG ULTRAGEAR']
+   # screens: ['27GN7', 'LG ULTRAGEAR']
     class_name: "yasb-bar"
     alignment:
       position: "top"
@@ -37,7 +37,7 @@ bars:
           "win_button",
           "weather",
           "media",
-          #"komorebi_workspaces",
+         # "komorebi_workspaces",
           "traffic"
         ]
       center: [
@@ -50,7 +50,7 @@ bars:
           "language",
           "microphone",
           "volume",
-          #"clock",
+         # "clock",
           "power_menu"
         ]
 widgets:
